@@ -1,0 +1,39 @@
+# ========================
+# Maven / Spring Boot
+# ========================
+/target/
+/pom.xml.tag
+/pom.xml.releaseBackup
+/pom.xml.versionsBackup
+/logs/
+*.log
+
+# ========================
+# Eclipse IDE
+# ========================
+.classpath
+.project
+.settings/
+bin/
+
+# ========================
+# OS / System files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# IntelliJ IDEA (ako ikad koristiš)
+# ========================
+*.iml
+.idea/
+out/
+
+# ========================
+# Temporary / Backup
+# ========================
+*.swp
+*.tmp
+*.bak
+*.orig
+*.rej
