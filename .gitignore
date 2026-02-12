@@ -37,3 +37,4 @@ out/
 *.bak
 *.orig
 *.rej
+/BolnicaWEB/src/main/resources/application.properties
