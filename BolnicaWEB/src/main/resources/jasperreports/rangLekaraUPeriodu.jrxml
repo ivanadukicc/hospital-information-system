@@ -1,0 +1,111 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="rangLekaraUPeriodu" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="57c0a60a-2647-4792-95be-6466b97dc50d">
+	<parameter name="od" class="java.lang.String"/>
+	<parameter name="doo" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="ime" class="java.lang.String"/>
+	<field name="prezime" class="java.lang.String"/>
+	<field name="brojTermina" class="java.lang.Long"/>
+	<variable name="report_count" class="java.lang.Integer"/>
+	<variable name="Ime1" resetType="Column" calculation="DistinctCount" class="java.lang.Integer">
+		<expression><![CDATA[$F{ime}]]></expression>
+	</variable>
+	<background splitType="Stretch"/>
+	<title height="98" splitType="Stretch">
+		<element kind="staticText" uuid="e2cbbf6d-521b-4559-93eb-59596817c489" x="80" y="0" width="400" height="30" fontSize="22.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Rang lekara u datom periodu]]></text>
+		</element>
+		<element kind="staticText" uuid="0fe461a1-765b-4dd4-9e5a-8c9740783fd1" x="81" y="44" width="49" height="16">
+			<text><![CDATA[Datum od:]]></text>
+		</element>
+		<element kind="staticText" uuid="40c9232e-3c8a-48ae-8259-da3528d015df" x="80" y="60" width="48" height="16">
+			<text><![CDATA[Datum do:]]></text>
+		</element>
+		<element kind="textField" uuid="65a4a846-3bbf-48ae-8da1-b08691ec68e3" x="130" y="44" width="100" height="16">
+			<expression><![CDATA[$P{od}]]></expression>
+		</element>
+		<element kind="textField" uuid="61e5ca88-73a6-4968-ad3f-8d363e21be5b" x="130" y="60" width="100" height="16">
+			<expression><![CDATA[$P{doo}]]></expression>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnHeader height="32" splitType="Stretch">
+		<element kind="staticText" uuid="24ba59ef-f7c8-41ad-b3a3-0e37509d5227" mode="Opaque" x="220" y="0" width="100" height="30" backcolor="#FAE6E6" bold="true" hTextAlign="Center">
+			<text><![CDATA[Prezime]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="af832a47-0f92-435a-b0f0-a86fe9fb66e4"/>
+			<box>
+				<pen lineWidth="1.0" lineStyle="Solid"/>
+				<topPen lineStyle="Solid"/>
+				<leftPen lineStyle="Solid"/>
+				<bottomPen lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="f6ed2efa-e43d-404d-9089-cda94cb6362d" mode="Opaque" x="120" y="0" width="100" height="30" backcolor="#FAE6E6" bold="true" hTextAlign="Center">
+			<text><![CDATA[Ime]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="33fc5c2b-ec74-41bf-8c12-c8b00ba73d32"/>
+			<box>
+				<pen lineWidth="1.0" lineStyle="Solid"/>
+				<topPen lineStyle="Solid"/>
+				<leftPen lineStyle="Solid"/>
+				<bottomPen lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="667e7e56-81a6-4f05-b801-d45611482c1d" mode="Opaque" x="320" y="0" width="100" height="30" backcolor="#FAE6E6" bold="true" hTextAlign="Center">
+			<text><![CDATA[broj termina]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="857568e3-0e62-49a8-92b0-e8873e6ab623"/>
+			<box>
+				<pen lineWidth="1.0" lineStyle="Solid"/>
+				<topPen lineStyle="Solid"/>
+				<leftPen lineStyle="Solid"/>
+				<bottomPen lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<element kind="textField" uuid="6b59b363-9e22-4a78-baba-619ba29828ad" x="219" y="0" width="100" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{prezime}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="af832a47-0f92-435a-b0f0-a86fe9fb66e4"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Double"/>
+					<leftPen lineWidth="1.0" lineStyle="Double"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+					<rightPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="f8e30511-12e6-4257-ba3b-eb48b65764e9" x="120" y="0" width="100" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{ime}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="33fc5c2b-ec74-41bf-8c12-c8b00ba73d32"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Double"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+					<rightPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="3286826c-c849-4b39-862a-ffd43b9c09c7" x="320" y="0" width="100" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{brojTermina}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="857568e3-0e62-49a8-92b0-e8873e6ab623"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Double"/>
+					<leftPen lineWidth="1.0" lineStyle="Double"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+					<rightPen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+			</element>
+		</band>
+	</detail>
+	<columnFooter splitType="Stretch"/>
+	<pageFooter height="60" splitType="Stretch">
+		<element kind="textField" uuid="44af2010-be6c-4450-8cca-5b07f55d1a95" x="230" y="20" width="100" height="30">
+			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

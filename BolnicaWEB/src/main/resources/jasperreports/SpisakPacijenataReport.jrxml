@@ -1,0 +1,130 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="RangLekaraReport" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b765b2e2-d55d-4579-9d37-43614de379bb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="ime" class="java.lang.String"/>
+	<field name="prezime" class="java.lang.String"/>
+	<field name="adresa" class="java.lang.String"/>
+	<field name="jmbg" class="java.lang.String"/>
+	<field name="telefon" class="java.lang.String"/>
+	<variable name="ukupnoPacijenata" calculation="Count" class="java.lang.Integer">
+		<expression><![CDATA[$F{ime}]]></expression>
+	</variable>
+	<background splitType="Stretch"/>
+	<title height="53" splitType="Stretch">
+		<element kind="staticText" uuid="c8b31049-14fb-4b27-8cf2-ffbfc7f43544" x="80" y="10" width="400" height="30" fontSize="22.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Pacijenti bolnice]]></text>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnHeader height="80" splitType="Stretch">
+		<element kind="staticText" uuid="71f758fe-7dfc-4436-9fcc-7a6e3f3e55ab" mode="Opaque" x="10" y="50" width="100" height="30" backcolor="#A2D0E8" bold="true" hTextAlign="Center">
+			<text><![CDATA[Ime]]></text>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="1e6e4d3d-40c4-4fd5-947a-2de0c7529644" mode="Opaque" x="110" y="50" width="100" height="30" backcolor="#A2D0E8" bold="true" hTextAlign="Center">
+			<text><![CDATA[Prezime]]></text>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="1f44e7ff-c268-44ee-b054-aeb1af577cde" mode="Opaque" x="210" y="50" width="100" height="30" backcolor="#A2D0E8" bold="true" hTextAlign="Center">
+			<text><![CDATA[Adresa]]></text>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="102cf130-7851-4233-b066-1e31c0448615" mode="Opaque" x="310" y="50" width="100" height="30" backcolor="#A2D0E8" bold="true" hTextAlign="Center">
+			<text><![CDATA[JMBG]]></text>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="a31789c3-2ff8-4760-9638-0328d014c2bf" mode="Opaque" x="410" y="50" width="100" height="30" backcolor="#A2D0E8" bold="true" hTextAlign="Center">
+			<text><![CDATA[Telefon]]></text>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<element kind="textField" uuid="171e5c81-69ec-48e1-b9cc-384735e08998" x="10" y="0" width="100" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{ime}]]></expression>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="4c8d45e1-15df-4b61-a808-b348de2443e0" x="110" y="0" width="100" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{prezime}]]></expression>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="f91eb803-076a-47c5-96b2-05e025cb092d" x="210" y="0" width="100" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{adresa}]]></expression>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="0d6e9950-a004-41db-87ac-fb33045a709c" x="310" y="0" width="100" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{jmbg}]]></expression>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="ae65ed8c-ac3a-4784-8ca6-a1cda47ce4f6" x="410" y="0" width="100" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{telefon}]]></expression>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+		</band>
+	</detail>
+	<columnFooter splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch">
+		<element kind="textField" uuid="bdad7277-64c5-48ac-9c44-80c16ed6bcfa" x="230" y="12" width="100" height="30">
+			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="56" splitType="Stretch">
+		<element kind="textField" uuid="1d74fee0-6115-4c79-8096-c72eea17df7a" x="100" y="20" width="100" height="30">
+			<expression><![CDATA[$V{ukupnoPacijenata}]]></expression>
+		</element>
+		<element kind="staticText" uuid="7dbf0267-1ebb-4a8d-8c54-2a2bd56b7362" x="0" y="20" width="100" height="30">
+			<text><![CDATA[Ukupno pacijenata: ]]></text>
+		</element>
+	</summary>
+</jasperReport>

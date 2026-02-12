@@ -1,0 +1,83 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="SpecStat" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="33e89d21-13ac-46d7-888b-9ba9b2435dd1">
+	<query language="sql"><![CDATA[]]></query>
+	<field name="specijalnost" class="java.lang.String"/>
+	<field name="mesec" class="java.lang.String"/>
+	<field name="brojTermina" class="java.lang.Long"/>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="27e211f7-8df4-4691-b3f0-cf9b23e3bc9f" x="77" y="10" width="400" height="36" fontSize="22.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Statistika specijalizacija]]></text>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnHeader height="31" splitType="Stretch">
+		<element kind="staticText" uuid="b7d0f3f5-3c88-4126-aaa7-67cf32f72351" mode="Opaque" x="200" y="0" width="126" height="30" backcolor="#C3F7C5" bold="true" hTextAlign="Center">
+			<text><![CDATA[Mesec]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b4ed8e25-f2d9-41e5-8c39-46009484a5b8"/>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="84d28527-2efa-471b-8e17-94c55b90a47b" mode="Opaque" x="327" y="0" width="150" height="30" backcolor="#C3F7C5" bold="true" hTextAlign="Center">
+			<text><![CDATA[Broj termina]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b8d82233-1163-479f-b1f1-6d25273819a3"/>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="440565ca-3100-495a-b3b8-8907ee4c5303" mode="Opaque" x="80" y="0" width="120" height="30" backcolor="#C3F7C5" bold="true" hTextAlign="Center">
+			<text><![CDATA[Specijalnost]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e8bf6fd2-c741-4402-8de5-614496b833d0"/>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<element kind="textField" uuid="5d8ab64f-94bf-4949-8921-289c698061da" x="80" y="0" width="120" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{specijalnost}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e8bf6fd2-c741-4402-8de5-614496b833d0"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="c69f9c6c-65b0-4075-a059-fe46a1d99e59" x="200" y="0" width="126" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{mesec}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b4ed8e25-f2d9-41e5-8c39-46009484a5b8"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="0358320d-cf90-465e-843d-5839029e93b6" x="327" y="0" width="150" height="30" hTextAlign="Center">
+				<expression><![CDATA[$F{brojTermina}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b8d82233-1163-479f-b1f1-6d25273819a3"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+		</band>
+	</detail>
+	<columnFooter splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
